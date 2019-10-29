@@ -1,0 +1,26 @@
+<table class="table-fill" *ngIf="userDetails">
+    <thead>
+        <tr>
+            <th colspan="2" class="text-center">UserProfile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td>{{userDetails.fullName.split(' ')[0]}}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{userDetails.fullName.split(' ')[1]}}</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>{{userDetails.email}}</td>
+        </tr>
+        <tr>
+            <td class="text-center" colspan="2">
+                <input type="button" (click)="onLogout()" value="Logout">
+            </td>
+        </tr>
+    </tbody>
+</table>
